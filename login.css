@@ -1,0 +1,267 @@
+html {
+  height: 100%;
+}
+
+body {
+  height: 100%;
+  margin: 0;
+  font-family: OrgonRegular;
+  display: grid;
+  justify-items: center;
+  align-items: center;
+  color: #ffffff;
+  background-color: #009468;
+}
+
+@font-face { font-family: OrgonRegular; src: url('font/Orgon-Regular.otf'); }
+@font-face { font-family: OrgonBold; font-weight: bold; src: url('font/Orgon-Bold.otf');}
+@font-face { font-family: OrgonExtraBold; font-weight: bold; src: url('font/Orgon-ExtraBold.otf'); }
+
+h1 {
+  color: #ffffff;
+  font-family: OrgonExtraBold;
+  font-size: 0px;
+}
+
+h2 {
+  color: #ffffff;
+  font-family: OrgonRegular;
+  font-size: 40px;
+}
+
+/* Links */
+a{
+  color: #ffffff;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #C284D1;
+  text-decoration: none;
+}
+
+a.active {
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.logo {
+  display: none;
+}
+
+/* LOGIN FORMULAR */
+#main-holder {
+  width: 70%;
+  height: 70%;
+  display: grid;
+  justify-items: center;
+  align-items: center;
+  border-radius: 0px;
+}
+
+#login-error-msg-holder {
+  width: 100%;
+  height: 100%;
+  display: grid;
+  justify-items: center;
+  align-items: center;
+}
+
+#login-error-msg {
+  width: auto;
+  text-align: center;
+  margin: 10px;
+  padding: 5px;
+  font-size: 12px;
+  font-weight: bold;
+  color: #8a0000;
+  border: 1px solid #8a0000;
+  background-color: #e58f8f;
+  opacity: 0;
+}
+
+#login-form {
+  width: 100%;
+  align-self: flex-start;
+  display: grid;
+  justify-items: center;
+  align-items: center;
+}
+
+.login-form-field::placeholder {
+  color: #ffffff;
+  font-family: OrgonRegular;
+}
+
+.login-form-field {
+  width: 100%;
+  height: 30px;
+  color: #ffffff;
+  font-family: OrgonRegular;
+  background-color: #006F4F;
+  border: none;
+  margin-bottom: 15px;
+  border-radius: 7px;
+  outline: none;
+  padding: 10px 10px 10px 20px;
+}
+
+#login-form-submit {
+  width: 40%;
+  padding: 7px;
+  margin-top: 15px;
+  border-color: #ffffff;
+  border-radius: 7px;
+  font-family: OrgonBold;
+  color: white;
+  font-weight: bold;
+  background-color: inherit;
+  cursor: pointer;
+  outline: none;
+}
+
+@media screen and (min-width: 768px) {
+ html {
+    height: auto;
+  }
+
+  body {
+    height: 100%;
+    margin: 0;
+    font-family: OrgonRegular;
+    display: grid;
+    justify-items: center;
+    align-items: center;
+    background: lightblue url("img/background.jpg") no-repeat fixed center;
+    background-size: auto;
+
+  }
+
+  header {
+    height: 100%;
+    background-color: #006F4F;
+    padding-left: 210px;
+    border-bottom-right-radius: 15px;
+    border-bottom-left-radius: 15px;
+  }
+
+  .logo {
+    display: block;
+    width: 15%;
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+
+  h1 {
+    color: #ffffff;
+    font-family: OrgonExtraBold;
+    font-size: 40px;
+  }
+
+  h2 {
+    color: #ffffff;
+    font-family: OrgonRegular;
+    font-size: 40px;
+  }
+
+  /* LOGIN FORMULAR DESKTOP */
+  #main-holder {
+    display: inline-block;
+    width: 100%;
+    margin-top: 35px;
+   text-align: center;
+
+  }
+
+  #leftbox {
+    display: inline-block;
+    padding: 1rem 1rem;
+    vertical-align: middle;
+
+    width: 25%;
+    justify-items: center;
+    align-items: center;
+    border-radius: 0px;
+
+    margin-bottom: 100px;
+    margin-right: 100px;
+  }
+
+  #rightbox {
+  display: inline-block;
+  padding: 1rem 1rem;
+  padding-top: 50px;
+  vertical-align: middle;
+
+    width: 25%;
+
+    justify-items: center;
+    align-items: center;
+    border-radius: 0px;
+
+    margin-bottom: 100px;
+    margin-left: 100px;
+  }
+
+  #login-error-msg-holder {
+    width: 100%;
+    height: 100%;
+    display: grid;
+    justify-items: center;
+    align-items: center;
+  }
+
+  #login-error-msg {
+    width: auto;
+    text-align: center;
+    margin: 10px;
+    padding: 5px;
+    font-size: 12px;
+    font-weight: bold;
+    color: #8a0000;
+    border: 1px solid #8a0000;
+    background-color: #e58f8f;
+    opacity: 0;
+  }
+
+  #login-form {
+    width: 100%;
+    align-self: flex-start;
+    display: grid;
+    justify-items: center;
+    align-items: center;
+  }
+
+  .login-form-field::placeholder {
+    color: #000000;
+    font-family: OrgonRegular;
+  }
+
+  .login-form-field {
+    width: 100%;
+    height: 30px;
+    border: none;
+    color: #000000;
+    font-family: OrgonRegular;
+    background-color: #F8E4F8; opacity: 80%;
+    margin-bottom: 15px;
+    border-radius: 7px;
+    outline: none;
+    padding: 10px 10px 10px 20px;
+  }
+
+  #login-form-submit {
+    width: 30%;
+    padding: 7px;
+    margin-top: 15px;
+    border-color: #ffffff;
+    border-radius: 7px;
+    font-family: OrgonBold;
+    color: white;
+    font-weight: bold;
+    background-color: #006F4F;
+    cursor: pointer;
+    outline: none;
+  }
+
+}
