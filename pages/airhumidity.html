@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="da">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../style.css">
+    <script src="../script.js" defer></script>
+    <title>Hydrovertic</title>
+  </head>
+  <body>
+    <header>
+      <a href="../pages/temperature.html"><img class="logo" src="../img/logo.png" alt="Hydrovertic logo"></a>
+      <a href="../pages/profil.html"><img class="profilicon" src="../img/profile-white.png" alt="Profil icon"></a>
+    </header>
+    <main id="main-holder">
+      <div id="leftbox">
+        <div id="valuebox">
+          <a href="../pages/temperature.html"><img class="leftarrow" src="../img/left-arrow.png" alt="Left arrow"></a>
+          <h2>Lugtfugtighed</h2>
+          <a href="../pages/carbondioxide.html"><img class="rightarrow" src="../img/right-arrow.png" alt="Right arrow"></a>
+        </div>
+        <div id="grafbox">
+          <img id="graf" src="../img/graf.png" alt="Billede af graf">
+        </div>
+      </div>
+
+      <div id="rightbox">
+        <div id="topbox">
+          <h2>Graf</h2>
+        </div>
+        <div id="buttonbox">
+          <button id="buttonGraf" onclick="document.getElementById('graf').src='../img/graf.png'">Søjle</button>
+          <button id="buttonGraf" onclick="document.getElementById('graf').src='img/graf2.png'">Linje</button>
+          <button id="buttonGraf" onclick="document.getElementById('graf').src='img/graf3.png'">Område</button>
+        </div>
+        <div id="topbox">
+          <h2>Tidsramme</h2>
+        </div>
+        <div id="buttonbox">
+          <button id="buttonTidInt" onclick="document.getElementById('graf').src='../img/graf.png'">1 dag</button>
+          <button id="buttonTidInt" onclick="document.getElementById('graf').src='../img/graf2.png'">1 uge</button>
+          <button id="buttonTidInt" onclick="document.getElementById('graf').src='../img/graf3.png'">1 måned</button>
+          <button id="buttonTidInt" onclick="document.getElementById('graf').src='../img/graf3.png'">1 kvartal</button>
+        </div>
+        <div id="topbox">
+          <h2>Interval</h2>
+        </div>
+        <div id="buttonbox">
+          <button id="buttonTidInt" onclick="document.getElementById('graf').src='../img/graf.png'">15 min</button>
+          <button id="buttonTidInt" onclick="document.getElementById('graf').src='../img/graf2.png'">30 min</button>
+          <button id="buttonTidInt" onclick="document.getElementById('graf').src='../img/graf3.png'">1 time</button>
+          <button id="buttonTidInt" onclick="document.getElementById('graf').src='../img/graf3.png'">1 dag</button>
+          <button id="buttonTidInt" onclick="document.getElementById('graf').src='../img/graf3.png'">1 uge</button>
+        </div>
+      </div>
+    </main>
+    <footer>
+
+    </footer>
+  </body>
+</html>
