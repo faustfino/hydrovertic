@@ -23,8 +23,7 @@ header {
   height: 100%;
   background-color: #006F4F;
   padding-left: 20px;
-  border-bottom-right-radius: 15px;
-  border-bottom-left-radius: 15px;
+
 }
 
 @font-face { font-family: OrgonRegular; src: url('font/Orgon-Regular.otf'); }
@@ -64,7 +63,7 @@ a.active {
 .logo {
   display: inline;
   width: 20%;
-  padding-top: 20px;
+  padding-top: 30px;
   padding-bottom: 20px;
 }
 
@@ -80,9 +79,9 @@ a.active {
 }
 
 .graficon {
-  width: 60px;
+  width: 80px;
   float: right;
-  margin-top: 20px;
+  margin-top: 10px;
   padding-right: 20px;
 }
 
@@ -543,3 +542,107 @@ vertical-align: middle;
     padding-right: 25px;
   }
 }
+/*DROPDOWN*/
+
+.dropbtn-graf {
+  background-color: #006F4F;
+  color: white;
+  padding: 12px;
+  border: none;
+  cursor: pointer;
+
+  width: 70px;
+  padding-bottom: 25px;
+}
+
+.dropbtn-profil {
+  background-color: #006F4F;
+  color: white;
+  padding-top: 10px; 
+  border: none;
+  cursor: pointer;
+  width: 115px;
+}
+
+.dropdown {
+  color: #006F4F;
+  float: right;
+  position: relative;
+  display:block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #d8ead9;;
+  min-width: 160px;
+  overflow: auto;
+  right: 0;
+  z-index:1 ;
+  border-bottom-right-radius: 15px;
+  border-bottom-left-radius: 15px;
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+
+  
+}
+
+.dropdown-content button  {
+  background-color:#d8ead9;
+  padding: 16px;
+  border: none;
+  cursor: pointer;
+  width: 180px;
+  transition-duration: 0.4s;
+font-size: 15px;
+font-weight: bold;
+color: #006F4F;
+
+
+  
+
+}
+.dropdown-content button:hover {
+  background-color:#b0d5be;
+}
+
+
+.show {display:block;}
+
+
+
+.profilewhite {
+  width: 85px;
+  margin-top: 10px;
+  padding-right: 10px;
+  background-color: transparent;
+}
+
+.profilegreen {
+  width: 70px;
+  margin-top: 12px;
+  padding-left: 0px;
+  padding-bottom: 15px;
+  background-color: transparent;
+  float: left;
+}
+
+
+.grafgreen {
+  width: 60px;
+  margin-top: 20px;
+  padding-left: 20px;
+  padding-bottom: 20px;
+  background-color: transparent;
+  float: left;
+
+}
+
+.logudgreen {
+  width: 55px;
+  margin-top: 20px;
+  padding-left: 15px;
+  padding-bottom: 20px;
+  background-color: transparent;
+  float: left;
+}
+
