@@ -10,7 +10,14 @@
   <body>
     <header>
       <a href="../pages/temperature.html"><img class="logo" src="../img/logo.png" alt="Hydrovertic logo"></a>
-      <a href="../pages/profil.html"><img class="profilicon" src="../img/profile-white.png" alt="Profil icon"></a>
+      <div class="dropdown">
+        <button onclick="dropdown()" class="dropbtn-profil">   <img class="profilewhite" src="../img/profile-white.png" alt="Profile white"></a></button>
+        <div id="dropdown" class="dropdown-content">
+          <button><a href="../pages/profil.html">Profil <img class="profilegreen" src="../img/profile-green.png"></button></a>
+          <button><a href="../pages/temperature.html">Graf<img class="grafgreen" src="../img/graf-green.png" alt="Graph green"></a></button>
+          <button><a href="../pages/index.html">Log ud <img class="logudgreen" src="../img/logout-green.png"></button></a>
+        </div>
+      </div>
     </header>
     <main id="main-holder">
       <div id="leftbox">
