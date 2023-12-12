@@ -1,3 +1,9 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
 html {
   height: 100%;
 }
@@ -5,77 +11,535 @@ html {
 body {
   height: 100%;
   margin: 0;
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: OrgonRegular;
   display: grid;
   justify-items: center;
   align-items: center;
-  background-color: #009468;
-  background-image: linear-gradient(#009468, #006F4F);
+  color: #ffffff;
+  background-color: #b0d5be;
 }
 
-/* LOGIN FORMULAR */
+header {
+  height: 100%;
+  background-color: #006F4F;
+  padding-left: 20px;
+  border-bottom-right-radius: 15px;
+  border-bottom-left-radius: 15px;
+}
+
+@font-face { font-family: OrgonRegular; src: url('font/Orgon-Regular.otf'); }
+@font-face { font-family: OrgonBold; font-weight: bold; src: url('font/Orgon-Bold.otf');}
+@font-face { font-family: OrgonExtraBold; font-weight: bold; src: url('font/Orgon-ExtraBold.otf'); }
+
+h1 {
+  color: #ffffff;
+  font-family: OrgonExtraBold;
+  font-size: 0px;
+}
+
+h2 {
+  color: #ffffff;
+  font-family: OrgonRegular;
+  font-size: 40px;
+}
+
+/* Links */
+a{
+  color: #ffffff;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #C284D1;
+  text-decoration: none;
+}
+
+a.active {
+  color: #ffffff;
+  text-decoration: none;
+}
+
+/* BILLEDER */
+
+.logo {
+  display: inline;
+  width: 20%;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+#graf {
+  max-width: 400px;
+}
+
+.profilicon {
+  width: 50px;
+  float: right;
+  margin-top: 20px;
+  padding-right: 20px;
+}
+
+.graficon {
+  width: 60px;
+  float: right;
+  margin-top: 20px;
+  padding-right: 20px;
+}
+
+.leftarrow {
+  float:left;
+  width: 20%;
+}
+
+.rightarrow {
+  float: right;
+  width: 20%;
+}
+
+#profilpic {
+  justify-content: flex-start;
+}
+
+/* BOKSE */
+
 #main-holder {
-  width: 50%;
-  height: 70%;
-  display: grid;
-  justify-items: center;
-  align-items: center;
-  border-radius: 0px;
-}
-
-#login-error-msg-holder {
   width: 100%;
   height: 100%;
   display: grid;
   justify-items: center;
   align-items: center;
+  text-align: center;
 }
 
-#login-error-msg {
-  width: 23%;
+#leftbox > * {
+  flex-basis: 100%;
+}
+
+#leftbox {
+  display: block;
+
+  vertical-align: middle;
+
+  width: 95%;
+  justify-items: center;
+  align-items: center;
+  border-radius: 0px;
   text-align: center;
   margin: 0;
-  padding: 5px;
-  font-size: 12px;
-  font-weight: bold;
-  color: #8a0000;
-  border: 1px solid #8a0000;
-  background-color: #e58f8f;
-  opacity: 0;
 }
 
-#error-msg-second-line {
-  display: block;
+#rightbox > * {
+  flex-basis: 100%;
 }
 
-#login-form {
-  align-self: flex-start;
-  display: grid;
+#rightbox {
+display: block;
+
+vertical-align: middle;
+
+  width: 95%;
+
   justify-items: center;
+  align-items: center;
+  border-radius: 0px;
+
+  text-align: center;
+  margin: 0;
+}
+
+#valuebox {
+  width: 100%;
+  max-height: 50px;
+  background-color: #5baa86;
+  text-align: center;
+  padding-left: 7px;
+  padding-right: 7px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  border-radius: 7px;
+  display: flex;
+  justify-content: center;
   align-items: center;
 }
 
-.login-form-field::placeholder {
-  color: #3a3a3a;
-}
-
-.login-form-field {
-  background-color: #006F4F;
-  border: none;
-  margin-bottom: 10px;
-  border-radius: 3px;
-  outline: none;
-  padding: 5px 5px 5px 5px;
-}
-
-#login-form-submit {
+#grafbox {
   width: 100%;
-  padding: 7px;
-  border: none;
-  border-radius: 5px;
-  color: white;
-  font-weight: bold;
-  background-color: #3a3a3a;
-  cursor: pointer;
+  background-color: #d8ead9;
+  text-align: center;
+  margin-bottom: 40px;
+  border-radius: 7px;
+}
+
+#topbox {
+  width: 100%;
+  background-color: #5baa86;
+  text-align: center;
+  margin-top: 0px;
+  border-top-left-radius: 7px;
+  border-top-right-radius: 7px;
+}
+
+#buttonbox {
+  width: 100%;
+  background-color: #d8ead9;
+  text-align: center;
+  margin-bottom: 20px;
+  padding: 20px;
+  border-bottom-left-radius: 7px;
+  border-bottom-right-radius: 7px;
+}
+
+
+#profilebox {
+display: block;
+
+vertical-align: middle;
+
+  width: 95%;
+
+  justify-items: center;
+  align-items: center;
+  border-radius: 0px;
+
+  text-align: center;
+  margin: 0;
+}
+
+#titlebox {
+  width: 100%;
+  background-color: #5baa86;
+  text-align: center;
+  margin-top: 20px;
+  border-top-left-radius: 7px;
+  border-top-right-radius: 7px;
+}
+
+#contentbox {
+  width: 100%;
+  background-color: #d8ead9;
+  text-align: center;
+  padding: 20px;
+  border-bottom-left-radius: 7px;
+  border-bottom-right-radius: 7px;
+}
+
+#inputbox > * {
+  flex-basis: 100%;
+}
+
+#inputbox {
+  display: inline-block;
+  font-family: OrgonBold;
+  text-align: left;
+  color: #4A9773;
+  padding: 10px;
+  border: 3px solid #4A9773;
+   border-radius: 7px;
+  background-color: inherit;
   outline: none;
+  margin: 5px;
+  width: 47%;
+}
+
+#inputboxlarge {
+  display: inline-block;
+  font-family: OrgonBold;
+  text-align: left;
+  color: #4A9773;
+  padding: 10px;
+  border: 3px solid #4A9773;
+   border-radius: 7px;
+  background-color: inherit;
+  outline: none;
+  margin: 5px;
+  width: 96%;
+}
+
+#profilebox > * {
+  flex-basis: 100%;
+}
+
+#profilebox {
+  display: block;
+  padding: 15px;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+.profbox > * {
+  flex-basis: 100%;
+}
+
+.profbox {
+  display: block;
+  padding: 15px;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+.profilpic {
+  display: inline-block;
+  padding: 10px
+  background-color: inherit;
+  outline: none;
+  margin: 5px;
+  width: 30%;
+}
+
+.profilname {
+  display: inline-block;
+  font-family: OrgonBold;
+  text-align: left;
+  padding: 10px;
+  background-color: inherit;
+  outline: none;
+  margin: 5px;
+  width: 64%;
+}
+
+
+/* Knapper */
+#buttonGraf {
+  background-color: #FAC2F2;
+  background-image: linear-gradient(#FAC2F2, #7E627A);
+  color: #ffffff;
+  font-family: OrgonRegular;
+  border: none;
+  border-radius: 7px;
+  padding: 7px;
+  padding-left: 25px;
+  padding-right: 25px;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+#buttonTidInt {
+  background-color: #FAC2F2;
+  background-image: linear-gradient(#FAC2F2, #7E627A);
+  color: #ffffff;
+  font-family: OrgonRegular;
+  border: none;
+  border-radius: 7px;
+  padding: 7px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-left: 10x;
+  margin-right: 10px;
+}
+
+#buttonProfile {
+  width: 99%;
+  background-color: #FAC2F2;
+  background-image: linear-gradient(#FAC2F2, #7E627A);
+  color: #ffffff;
+  font-family: OrgonBold;
+  border: none;
+  border-radius: 7px;
+  padding: 7px;
+  padding-left: 25px;
+  padding-right: 25px;
+}
+
+@media screen and (min-width: 600px) {
+  .leftarrow {
+    width: 15%;
+  }
+
+  .rightarrow {
+    width: 15%;
+  }
+}
+
+@media screen and (min-width: 840px) {
+ html {
+    height: auto;
+  }
+
+  body {
+    background-size: auto;
+
+  }
+
+  h1 {
+    color: #ffffff;
+    font-family: OrgonExtraBold;
+    font-size: 40px;
+  }
+
+  h2 {
+    color: #ffffff;
+    font-family: OrgonRegular;
+    font-size: 40px;
+  }
+
+  .logo {
+    width: 10%
+  }
+
+
+  /* BOKSE */
+  #main-holder > * {
+    flex-basis: 100%;
+  }
+
+  #main-holder {
+    display: flex;
+    flex-direction: row;
+    margin-top: 35px;
+
+  }
+
+  #leftbox {
+    order: 2;
+    width: 100%;
+    height: 100%;
+    justify-items: center;
+    align-items: center;
+    border-radius: 0px;
+    margin-left: 30px;
+    margin-right: 10px;
+    text-align: center;
+  }
+
+  #rightbox {
+    order: 1;
+    max-width: 30%;
+    justify-items: center;
+    align-items: center;
+    border-radius: 0px;
+    margin-top: 74px;
+    margin-left: 10px;
+    margin-right: 30px;
+    text-align: center;
+  }
+
+  #valuebox {
+    background-color: #5baa86;
+    text-align: center;
+  }
+
+  #grafbox {
+    background-color: #d8ead9;
+    text-align: center;
+    margin-bottom: 0px;
+  }
+
+  #topbox {
+    background-color: #5baa86;
+    text-align: center;
+  }
+
+  #buttonbox {
+    background-color: #d8ead9;
+    text-align: center;
+    padding-left: 5px;
+    padding-right: 5px;
+  }
+
+  /* Knapper */
+  #buttonGraf {
+    background-color: #FAC2F2;
+    background-image: linear-gradient(#FAC2F2, #7E627A);
+    color: #ffffff;
+    font-family: OrgonRegular;
+    font-size: 10px;
+    border: none;
+    border-radius: 7px;
+    padding: 5px;
+    padding-left: 13px;
+    padding-right: 13px;
+    margin-left: 3px;
+    margin-right: 3px;
+  }
+
+  #buttonTidInt {
+    background-color: #FAC2F2;
+    background-image: linear-gradient(#FAC2F2, #7E627A);
+    color: #ffffff;
+    font-family: OrgonRegular;
+    font-size: 10px;
+    border: none;
+    border-radius: 7px;
+    padding: 5px;
+    padding-left: 8px;
+    padding-right: 8px;
+    margin-left: 3x;
+    margin-right: 3px;
+  }
+
+  #buttonProfile {
+    width: 99%;
+    background-color: #FAC2F2;
+    background-image: linear-gradient(#FAC2F2, #7E627A);
+    color: #ffffff;
+    font-family: OrgonBold;
+    font-size: 10px;
+    border: none;
+    border-radius: 7px;
+    padding: 5px;
+    padding-left: 8px;
+    padding-right: 8px;
+  }
+
+  #profilebox {
+    margin: auto;
+    max-width: 800px;
+  }
+
+}
+
+@media screen and (min-width: 1200px) {
+  .profilicon {
+    width: 60px;
+  }
+
+  .leftarrow {
+    width: 10%;
+  }
+
+  .rightarrow {
+    width: 10%;
+  }
+
+  /* Knapper */
+  #buttonGraf {
+    background-color: #FAC2F2;
+    background-image: linear-gradient(#FAC2F2, #7E627A);
+    color: #ffffff;
+    font-family: OrgonRegular;
+    border: none;
+    border-radius: 7px;
+    padding: 7px;
+    padding-left: 25px;
+    padding-right: 25px;
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+
+  #buttonTidInt {
+    background-color: #FAC2F2;
+    background-image: linear-gradient(#FAC2F2, #7E627A);
+    color: #ffffff;
+    font-family: OrgonRegular;
+    border: none;
+    border-radius: 7px;
+    padding: 7px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-left: 10x;
+    margin-right: 10px;
+  }
+
+  #buttonProfile {
+    width: 99%;
+    background-color: #FAC2F2;
+    background-image: linear-gradient(#FAC2F2, #7E627A);
+    color: #ffffff;
+    font-family: OrgonBold;
+    border: none;
+    border-radius: 7px;
+    padding: 7px;
+    padding-left: 25px;
+    padding-right: 25px;
+  }
 }
