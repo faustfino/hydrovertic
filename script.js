@@ -4,11 +4,11 @@ const loginErrorMsg = document.getElementById("login-error-msg");
 
 loginButton.addEventListener("click", (e) => {
     e.preventDefault();
-    const username = loginForm.username.value;
+    const email = loginForm.email.value;
     const password = loginForm.password.value;
 
-    if (username === "hydrovertic" && password === "user123") {
-        window.location.href = "startpage.html";
+    if (email === "mail@mail.dk" && password === "user123") {
+        window.location.href = "pages/temperature.html";
     } else {
         loginErrorMsg.style.opacity = 1;
     }
