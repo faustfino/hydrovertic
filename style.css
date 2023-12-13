@@ -568,7 +568,7 @@ vertical-align: middle;
   padding-top: 8px;
    border: none;
 cursor: pointer;
-  
+  padding-right: 20px;
 }
 
 .dropdown {
@@ -629,6 +629,7 @@ top: 60px;
   padding-right: 20px;
   padding-bottom: 10px;
   background-color: transparent;
+  width: 70px;
 }
 
 
