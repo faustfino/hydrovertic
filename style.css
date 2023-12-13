@@ -87,12 +87,12 @@ a.active {
 
 .leftarrow {
   float:left;
-  width: 20%;
+  width: 15%;
 }
 
 .rightarrow {
   float: right;
-  width: 20%;
+  width: 15%;
 }
 
 #profilpic {
@@ -345,11 +345,11 @@ vertical-align: middle;
 
 @media screen and (min-width: 600px) {
   .leftarrow {
-    width: 15%;
+    width: 10%;
   }
 
   .rightarrow {
-    width: 15%;
+    width: 10%;
   }
 }
 
