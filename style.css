@@ -87,12 +87,12 @@ a.active {
 
 .leftarrow {
   float:left;
-  width: 15%;
+  width: 12%;
 }
 
 .rightarrow {
   float: right;
-  width: 15%;
+  width: 12%;
 }
 
 #profilpic {
@@ -380,11 +380,11 @@ vertical-align: middle;
   }
 
      .leftarrow {
-    width: 15%;
+    width: 12%;
   }
 
   .rightarrow {
-    width: 15%;
+    width: 12%;
   }
 
     #whiteleaves {
@@ -509,11 +509,11 @@ vertical-align: middle;
   }
 
   .leftarrow {
-    width: 10%;
+    width: 8%;
   }
 
   .rightarrow {
-    width: 10%;
+    width: 8%;
   }
 
   /* Knapper */
