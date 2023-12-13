@@ -42,6 +42,12 @@ h2 {
   font-size: 20px;
 }
 
+h3 {
+  color: #ffffff;
+  font-family: OrgonRegular;
+  font-size: 20px;
+}
+
 /* Links */
 a{
   color: #ffffff;
@@ -372,8 +378,14 @@ vertical-align: middle;
   h2 {
     color: #ffffff;
     font-family: OrgonRegular;
-    font-size: 30px;
+    font-size: 20px;
   }
+
+    h3 {
+  color: #ffffff;
+  font-family: OrgonRegular;
+  font-size: 30px;
+}
 
   .logo {
     width: 10%
