@@ -379,6 +379,14 @@ vertical-align: middle;
     width: 10%
   }
 
+     .leftarrow {
+    width: 15%;
+  }
+
+  .rightarrow {
+    width: 15%;
+  }
+
     #whiteleaves {
   width: 40px;
 }
