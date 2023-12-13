@@ -99,6 +99,10 @@ a.active {
   justify-content: flex-start;
 }
 
+#whiteleaves {
+  width: 30px;
+}
+
 /* BOKSE */
 
 #main-holder {
@@ -374,6 +378,10 @@ vertical-align: middle;
   .logo {
     width: 10%
   }
+
+    #whiteleaves {
+  width: 40px;
+}
 
 
   /* BOKSE */
