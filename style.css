@@ -39,7 +39,7 @@ h1 {
 h2 {
   color: #ffffff;
   font-family: OrgonRegular;
-  font-size: 30px;
+  font-size: 40px;
 }
 
 /* Links */
@@ -97,10 +97,6 @@ a.active {
 
 #profilpic {
   justify-content: flex-start;
-}
-
-#whiteleaves {
-  width: 30px;
 }
 
 /* BOKSE */
@@ -379,10 +375,6 @@ vertical-align: middle;
     width: 10%
   }
 
-    #whiteleaves {
-  width: 40px;
-}
-
 
   /* BOKSE */
   #main-holder > * {
@@ -565,10 +557,10 @@ vertical-align: middle;
 .dropbtn-profil {
   background-color: #006F4F;
   color: white;
-  padding-top: 10px; 
-  border: none;
-  cursor: pointer;
-  width: 115px;
+  padding-top: 8px;
+   border: none;
+cursor: pointer;
+  
 }
 
 .dropdown {
@@ -582,7 +574,7 @@ vertical-align: middle;
   display: none;
   position: absolute;
   background-color: #d8ead9;
-  min-width: 160px;
+  min-width: 190px;
   overflow: auto;
   right: 0;
   z-index:1 ;
@@ -593,56 +585,50 @@ vertical-align: middle;
 }
 
 
-.dropdown-content .button {
+
+
+.dropdown-content a {
   background-color: transparent;
   border: none;
   color: #4A9773;
-  min-width: 160px;
-  padding: 15px 32px;
-  text-align: right;
+  width: 190px;
+padding-right: 60px;
+text-align: end;
+top: 60px;
+
+
+
   text-decoration: none;
   display: inline-block;
-  font-size: 16px;
-  margin: 4px 2px;
+  font-size: 20px;
+
   cursor: pointer;
 
 }
 
-.dropdown-content .button {
-  background-color: transparent;
-  border: none;
+.dropdown-content a:hover {
+  background-color: #b0d5be;
   color: #4A9773;
-  min-width: 160px;
-  padding: 15px 32px;
-  text-align: right;
-  text-decoration: none;
-  display: inline-block;
-  font-size: 16px;
-  margin: 4px 2px;
-  cursor: pointer;
-
-}
-
-
-
+ }
 
 
 .show {display:block;}
 
-
-
 .profilewhite {
-  width: 85px;
-  margin-top: 10px;
-  padding-right: 10px;
+  width: 100px;
+  padding-top: 12px;
+  padding-left: 0px;
+  padding-right: 20px;
+  padding-bottom: 10px;
   background-color: transparent;
 }
 
+
 .profilegreen {
-  width: 60px;
-  padding-top: 12px;
+  width: 90px;
+  padding-top: 10px;
   padding-left: 0px;
-  padding-right: 0px;
+  padding-right: 20px;
   padding-bottom: 15px;
   background-color: transparent;
   float: left;
@@ -650,9 +636,9 @@ vertical-align: middle;
 
 
 .grafgreen {
-  width: 40px;
+  width: 60px;
   padding-top: 20px;
-  padding-left: 0px;
+  padding-left: 15px;
   padding-right: 0px;
   padding-bottom: 20px;
   background-color: transparent;
@@ -661,13 +647,14 @@ vertical-align: middle;
 }
 
 .logudgreen {
-  width: 40px;
+  width: 60px;
   padding-top: 20px;
-  padding-left: 0px;
+  padding-left: 10px;
   padding-right: 0px;
   padding-bottom: 20px;
   background-color: transparent;
   float: left;
+  display: inline;
 }
 
 
