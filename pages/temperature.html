@@ -11,55 +11,52 @@
     <header>
       <a href="../pages/temperature.html"><img class="logo" src="../img/logo.png" alt="Hydrovertic logo"></a>
       <div class="dropdown">
-        <button onclick="dropdown()" class="dropbtn-profil">   <img class="profilewhite" src="../img/profile-white.png" alt="Profile white"></a></button>
+        <button onclick="dropdown()" class="dropbtn-graf">   <img class="graficon" src="../img/graf-white.png" alt="Graf icon"></a></button>
         <div id="dropdown" class="dropdown-content">
-          <button><a href="../pages/profil.html">Profil <img class="profilegreen" src="../img/profile-green.png"></button></a>
-          <button><a href="../pages/temperature.html">Graf<img class="grafgreen" src="../img/graf-green.png" alt="Graph green"></a></button>
-          <button><a href="../pages/index.html">Log ud <img class="logudgreen" src="../img/logout-green.png"></button></a>
+          <a href="../pages/profil.html" class="button">Profil<img class="profilegreen" src="../img/profile-green.png" alt="Profil green"></a>
+          <a href="../pages/temperature.html" class="button">Graf<img class="grafgreen" src="../img/graf-green.png" alt="Graph green"></a>
+          <a href="../pages/index.html" class="button">Log ud <img class="logudgreen" src="../img/logout-green.png" alt="Log ud"></a>
         </div>
       </div>
     </header>
     <main id="main-holder">
-      <div id="leftbox">
-        <div id="valuebox">
-          <a href="../pages/waterph.html"><img class="leftarrow" src="../img/left-arrow.png" alt="Left arrow"></a>
-          <h2>Temperatur</h2>
-          <a href="../pages/airhumidity.html"><img class="rightarrow" src="../img/right-arrow.png" alt="Right arrow"></a>
+      <div id="profilebox">
+        <div id="titlebox">
+          <h2>Profil</h2>
         </div>
-        <div id="grafbox">
-          <img id="graf" src="../img/graf.png" alt="Billede af graf">
+        <div id="contentbox">
+          <div class="profbox">
+            <div class="profilpic">
+              <img id="profilpic" src="../img/profilpic.png" alt="Profilbillede"><br><br>
+            </div>
+            <div class="profilname">
+              <h3>Henrik Nielsen</h3>
+              <p>CEO HN Garneriet</p><br>
+            </div>
+          </div>
+          <div id="inputbox">
+            <p>Henrik Nielsen</p>
+            </div>
+            <div id="inputbox">
+              <p>henrik@hngartneriet.dk</p>
+              </div>
+              <div id="inputboxlarge">
+                <p>H.C. Lumbyes Vej 62</p>
+                </div>
+                <div id="inputbox">
+                  <p>5270</p>
+                  </div>
+                  <div id="inputbox">
+                    <p>Odense N</p>
+                    </div>
+                    <div id="inputbox">
+                      <p>+45 12 34 56 78</p>
+                      </div>
+                      <div id="inputbox">
+                        <p>HN Gartneriet</p>
+                        </div><br>
+                      </div>
         </div>
-      </div>
-
-      <div id="rightbox">
-        <div id="topbox">
-          <h2>Graf</h2>
-        </div>
-        <div id="buttonbox">
-          <button id="buttonGraf" onclick="document.getElementById('graf').src='../img/graf.png'">Søjle</button>
-          <button id="buttonGraf" onclick="document.getElementById('graf').src='img/graf2.png'">Linje</button>
-          <button id="buttonGraf" onclick="document.getElementById('graf').src='img/graf3.png'">Område</button>
-        </div>
-        <div id="topbox">
-          <h2>Tidsramme</h2>
-        </div>
-        <div id="buttonbox">
-          <button id="buttonTidInt" onclick="document.getElementById('graf').src='../img/graf.png'">1 dag</button>
-          <button id="buttonTidInt" onclick="document.getElementById('graf').src='../img/graf2.png'">1 uge</button>
-          <button id="buttonTidInt" onclick="document.getElementById('graf').src='../img/graf3.png'">1 måned</button>
-          <button id="buttonTidInt" onclick="document.getElementById('graf').src='../img/graf3.png'">1 kvartal</button>
-        </div>
-        <div id="topbox">
-          <h2>Interval</h2>
-        </div>
-        <div id="buttonbox">
-          <button id="buttonTidInt" onclick="document.getElementById('graf').src='../img/graf.png'">15 min</button>
-          <button id="buttonTidInt" onclick="document.getElementById('graf').src='../img/graf2.png'">30 min</button>
-          <button id="buttonTidInt" onclick="document.getElementById('graf').src='../img/graf3.png'">1 time</button>
-          <button id="buttonTidInt" onclick="document.getElementById('graf').src='../img/graf3.png'">1 dag</button>
-          <button id="buttonTidInt" onclick="document.getElementById('graf').src='../img/graf3.png'">1 uge</button>
-        </div>
-      </div>
     </main>
     <footer>
 
