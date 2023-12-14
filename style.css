@@ -103,6 +103,7 @@ a.active {
 
 #profilpic {
   justify-content: flex-start;
+    width: 150px;
 }
 
 #whiteleaves {
@@ -298,7 +299,7 @@ vertical-align: middle;
 .profilname {
   display: inline-block;
   font-family: OrgonBold;
-  text-align: left;
+  text-align: center;
   padding: 10px;
   background-color: inherit;
   outline: none;
@@ -357,6 +358,13 @@ vertical-align: middle;
   .rightarrow {
     width: 10%;
   }
+
+      .profilname {
+    text-align: left;
+  }
+
+    #profilpic {
+        width: 250px;
 }
 
 @media screen and (min-width: 840px) {
