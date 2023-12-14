@@ -299,7 +299,7 @@ vertical-align: middle;
 .profilname {
   display: inline-block;
   font-family: OrgonBold;
-  text-align: left;
+  text-align: center;
   padding: 10px;
   background-color: inherit;
   outline: none;
