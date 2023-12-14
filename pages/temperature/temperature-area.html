@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="da">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../style.css">
+    <script src="../script.js" defer></script>
+    <title>Hydrovertic</title>
+  </head>
+  <body>
+    <header>
+      <a href="../pages/temperature/temperature.html"><img class="logo" src="../img/logo.png" alt="Hydrovertic logo"></a>
+      <div class="dropdown">
+        <button onclick="dropdown()" class="dropbtn-profil">   <img class="profilewhite" src="../img/profile-white.png" alt="Profil icon"></button>
+        <div id="dropdown" class="dropdown-content">
+          <a href="../pages/profil.html" class="button">Profil<img class="profilegreen" src="../img/profile-green.png" alt="Profil green"></a>
+          <a href="../pages/temperature/temperature.html" class="button">Graf<img class="grafgreen" src="../img/graf-green.png" alt="Graph green"></a>
+          <a href="../index.html" class="button">Log ud <img class="logudgreen" src="../img/logout-green.png" alt="Log ud"></a>
+        </div>
+      </div>
+    </header>
+    <main id="main-holder">
+      <div id="leftbox">
+        <div id="valuebox">
+          <a href="../pages/waterph/waterph.html"><img class="leftarrow" src="../img/left-arrow.png" alt="Left arrow"></a>
+          <h2>Temperatur</h2>
+          <a href="../pages/airhumidity/airhumidity.html"><img class="rightarrow" src="../img/right-arrow.png" alt="Right arrow"></a>
+        </div>
+        <div id="grafbox">
+          <img id="graf" src="../img/graf.png" alt="Billede af graf">
+        </div>
+      </div>
+
+      <div id="rightbox">
+        <div id="topbox">
+          <h3><img id="whiteleaves" src="../img/white-leaves.png" alt="Billede af blad">&nbsp;Graf</h3>
+        </div>
+        <div id="buttonbox">
+          <button id="buttonGraf" onclick="window.location.href = '../pages/temperature/temperature.html';">Søjle</button>
+          <button id="buttonGraf" onclick="window.location.href = '../pages/temperature/temperature-line.html';">Linje</button>
+          <button id="buttonGraf" onclick="window.location.href = '../pages/temperature/temperature-area.html';">Område</button>
+        </div>
+        <div id="topbox">
+          <h3><img id="whiteleaves" src="../img/white-leaves.png" alt="Billede af blad">&nbsp;Tidsramme</h3>
+        </div>
+        <div id="buttonbox">
+          <button id="buttonTidInt" onclick="document.getElementById('graf').src='../img/1time-area.png'">1 dag</button>
+          <button id="buttonTidInt" onclick="document.getElementById('graf').src='../img/1time-area.png'">1 uge</button>
+          <button id="buttonTidInt" onclick="document.getElementById('graf').src='../img/1time-area.png'">1 måned</button>
+          <button id="buttonTidInt" onclick="document.getElementById('graf').src='../img/1time-area.png'">1 kvartal</button>
+        </div>
+        <div id="topbox">
+          <h3><img id="whiteleaves" src="../img/white-leaves.png" alt="Billede af blad">&nbsp;Interval</h3>
+        </div>
+        <div id="buttonbox">
+          <button id="buttonTidInt" onclick="document.getElementById('graf').src='../img/1time-area.png'">15 min</button>
+          <button id="buttonTidInt" onclick="document.getElementById('graf').src='../img/1time-area.png'">30 min</button>
+          <button id="buttonTidInt" onclick="document.getElementById('graf').src='../img/1time-area.png'">1 time</button>
+          <button id="buttonTidInt" onclick="document.getElementById('graf').src='../img/1time-area.png'">1 dag</button>
+          <button id="buttonTidInt" onclick="document.getElementById('graf').src='../img/1time-area.png'">1 uge</button>
+        </div>
+      </div>
+    </main>
+    <footer>
+
+    </footer>
+  </body>
+</html>
