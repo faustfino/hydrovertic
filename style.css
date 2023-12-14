@@ -103,6 +103,7 @@ a.active {
 
 #profilpic {
   justify-content: flex-start;
+    width: 150px;
 }
 
 #whiteleaves {
@@ -398,6 +399,10 @@ vertical-align: middle;
   .rightarrow {
     width: 12%;
   }
+
+    .profilpic {
+        width: 200px;
+    }
 
 
   /* BOKSE */
