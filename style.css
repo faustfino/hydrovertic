@@ -392,6 +392,10 @@ vertical-align: middle;
     width: 10%
   }
 
+    #graf {
+        width: 80%;
+    }
+
      .leftarrow {
     width: 12%;
   }
