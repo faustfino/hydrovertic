@@ -16,7 +16,7 @@ loginButton.addEventListener("click", (e) => {
     const user = users.find(u => u.email === email && u.password === password);
 
     if (user) {
-        window.location.href = "pages/temperature.html";
+        window.location.href = "pages/temperature/temperature.html";
     } else {
         loginErrorMsg.style.opacity = 1;
     }
