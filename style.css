@@ -360,6 +360,10 @@ vertical-align: middle;
     width: 10%;
   }
 
+      .profilname {
+    text-align: left;
+  }
+
     #profilpic {
         width: 250px;
 }
