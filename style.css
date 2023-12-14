@@ -360,6 +360,10 @@ vertical-align: middle;
     width: 10%;
   }
 
+    #profilpic {
+        width: 250px;
+}
+
 @media screen and (min-width: 840px) {
  html {
     height: auto;
@@ -509,10 +513,6 @@ vertical-align: middle;
     margin: auto;
     max-width: 800px;
   }
-
-        #profilpic {
-        width: 250px;
-}
 
 }
 
